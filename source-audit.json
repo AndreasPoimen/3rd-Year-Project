@@ -1,0 +1,15 @@
+{
+  "csvRows": 203,
+  "workbookRows": 120,
+  "matchedRankedRows": 120,
+  "additionalWorkbookRecords": 0,
+  "totalRecords": 203,
+  "topicCounts": {
+    "Space Debris Collection": 39,
+    "Capture Mechanisms": 25,
+    "Hypervelocity Capture": 43,
+    "Rendezvous & GNC": 30,
+    "Debris Environment": 26,
+    "Small-Debris Removal": 40
+  }
+}
