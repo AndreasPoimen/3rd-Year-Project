@@ -1,0 +1,38 @@
+name: Refresh object classifications and sizes
+on:
+  schedule:
+    - cron: '51 18 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/object-metadata.yml'
+      - 'scripts/update-object-metadata.mjs'
+      - 'scripts/test-catalogue.mjs'
+      - 'orbit-catalogue.js'
+permissions:
+  contents: write
+concurrency:
+  group: orbit-catalogue
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check scripts/update-object-metadata.mjs
+      - run: node scripts/update-object-metadata.mjs
+        if: github.event_name != 'push'
+      - run: node scripts/test-catalogue.mjs
+      - name: Save validated metadata
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add orbit-data/object-metadata.json orbit-data/gcat-catalogue.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh GCAT object classifications and dimensions'
+            git push
+          fi

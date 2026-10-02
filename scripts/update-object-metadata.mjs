@@ -1,0 +1,15 @@
+import {readFile,writeFile,rename} from 'node:fs/promises';
+import {category} from '../orbit-catalogue.js';
+export function parseTSV(text){const lines=text.replace(/^\uFEFF/,'').split(/\r?\n/),header=lines[0].replace(/^#/,'').split('\t').map(s=>s.trim());if(!header.includes('Satcat'))throw Error('Invalid GCAT table');return lines.slice(1).filter(l=>l&&!l.startsWith('#')).map(line=>{const cells=line.split('\t');if(cells.length!==header.length)throw Error('Truncated GCAT row');return Object.fromEntries(header.map((h,i)=>[h,cells[i].trim()]));});}
+const local=process.argv.includes('--local'),base='https://planet4589.org/space/gcat/tsv/';
+async function get(path,file){if(local)return readFile(new URL('../../../work/orbits/'+file,import.meta.url),'utf8');const r=await fetch(base+path,{signal:AbortSignal.timeout(120000)});if(!r.ok)throw Error('GCAT HTTP '+r.status);return r.text();}
+const mainText=await get('cat/satcat.tsv','gcat.tsv'),currentText=await get('derived/currentcat.tsv','currentcat.tsv');
+const physical=new Map(parseTSV(mainText).map(r=>[r['JCAT'],r]));
+const number=s=>s&&s!=='-'&&Number.isFinite(Number(s))&&Number(s)>0?Number(s):null;
+const rows=parseTSV(currentText).filter(r=>/^S\d+$/.test(r.JCAT)&&/^\d+$/.test(r.Satcat)&&r.ExpandedStatus==='In Earth orbit'&&r.Active!=='Z').map(r=>{const p=physical.get(r.JCAT)||{};return {id:String(Number(r.Satcat)),jcat:r.JCAT,name:r.Name,category:category(r.Active),status:r.ExpandedStatus,code:r.Active,length:number(p.Length),lengthEstimated:p.LFlag==='?',span:number(p.Span),spanEstimated:p.SpanFlag==='?',diameter:number(p.Diameter),diameterEstimated:p.DFlag==='?',mass:number(p.DryMass),massEstimated:p.DryFlag==='?',country:r.State,launch:r.LDate,perigee:number(r.Perigee),apogee:number(r.Apogee),orbitDate:r.ODate};});
+if(rows.length<1000)throw Error('Unexpectedly small GCAT catalogue; previous data retained');
+const meta={fetchedAt:new Date().toISOString(),sourceUpdated:currentText.split(/\r?\n/)[1],attribution:'Jonathan C. McDowell, General Catalog of Artificial Space Objects (GCAT)',source:'https://planet4589.org/space/gcat/',license:'https://creativecommons.org/licenses/by/4.0/',notes:'MIDAS selects standard numbered objects explicitly in Earth orbit, joins physical dimensions by JCAT and maps GCAT Active codes to categories. Dimensions may be source estimates. No orbital positions generated from GCAT summary data.'};
+const tle=JSON.parse(await readFile(new URL('../orbit-data/satnogs.json',import.meta.url),'utf8'));
+const ids=new Set(tle.rows.map(r=>String(r.norad_cat_id)));
+for(const [name,selected] of [['gcat-catalogue.json',rows],['object-metadata.json',rows.filter(r=>ids.has(r.id))]]){const dest=new URL('../orbit-data/'+name,import.meta.url),temp=new URL(dest.href+'.tmp');await writeFile(temp,JSON.stringify({...meta,rows:selected}));await rename(temp,dest);}
+console.log(JSON.stringify({catalogue:rows.length,matched:rows.filter(r=>ids.has(r.id)).length,dimensions:rows.filter(r=>r.length!==null).length,categories:rows.reduce((a,r)=>(a[r.category]=(a[r.category]||0)+1,a),{})}));

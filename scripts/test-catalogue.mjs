@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {category,matches,sizeBand,dimension} from '../orbit-catalogue.js';
+assert.equal(category('A'),'active');assert.equal(category('P'),'inactive');assert.equal(category('D'),'debris');assert.equal(category('?'),'unknown');
+for(const [value,band] of [[null,'unknown'],[.099,'tiny'],[.1,'small'],[1,'medium'],[10,'large']])assert.equal(sizeBand(value),band);
+assert.equal(dimension({length:0}),null);assert.equal(dimension({length:null}),null);
+const filters={type:'debris',size:'small',basis:'length',estimates:false};
+assert(matches({category:'debris',length:.4},filters));assert(!matches({category:'active',length:.4},filters));assert(!matches({category:'debris',length:.4,lengthEstimated:true},filters));
+assert(matches(undefined,{type:'unknown',size:'unknown',basis:'length',estimates:true}));
+const data=JSON.parse(await readFile(new URL('../orbit-data/gcat-catalogue.json',import.meta.url),'utf8'));
+assert.equal(new Set(data.rows.map(r=>r.id)).size,data.rows.length);
+assert(data.rows.every(r=>r.status==='In Earth orbit'));
+assert(data.rows.some(r=>r.category==='debris'));assert(data.rows.some(r=>r.category==='inactive'));
+console.log('Category mapping, size boundaries, unknowns, estimated-value exclusion and catalogue integrity: passed. '+data.rows.length+' records.');
