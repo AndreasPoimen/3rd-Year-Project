@@ -35,7 +35,7 @@
  window.OrbitalCloud.saveDeck=(deck,deleted=false)=>{if(!['owner','editor'].includes(role)||failed){status('Saving unavailable. Check your role or load the latest version first.');return false;}dirty=false;optimistic.set(key('diagram',deck.id),clone(deck));enqueue('diagram',deck.id,deck,deleted);status('Saving presentation…');return true;};
  window.OrbitalCloud.markDirty=()=>{dirty=true;};
  window.OrbitalCloud.canEdit=()=>['owner','editor'].includes(role);
- document.addEventListener('input',e=>{if(e.target.closest('#cloud-gate,#cloud-bar,#teamContent')||e.target.type==='search'||['search','designSearch'].includes(e.target.id))return;dirty=true;});
+ document.addEventListener('input',e=>{if(e.target.closest('#cloud-gate,#cloud-bar,#teamContent,#midas-password')||e.target.type==='search'||['search','designSearch'].includes(e.target.id))return;dirty=true;});
  document.addEventListener('pointerdown',()=>pointerDown=true);document.addEventListener('pointerup',()=>pointerDown=false);
  window.addEventListener('beforeunload',e=>{if(pending||dirty||failed){e.preventDefault();e.returnValue='';}});
  async function loadScript(src){await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src+'?v=approval1';s.onload=resolve;s.onerror=()=>reject(Error('Could not load '+src));document.body.append(s);});}
@@ -48,6 +48,7 @@
   const result=await client.rpc('of_my_role');if(result.error)throw result.error;role=result.data;
   if(!role){await MidasAccounts.waiting(client,gate,msg,session.user);return;}
   window.OrbitalCloud.role=()=>role;window.OrbitalCloud.teamClient=()=>client;
+  MidasAccounts.passwordSettings(client,bar,session.user.email);
   if(role==='owner'){const link=document.createElement('a');link.href='team.html';link.textContent='05 Team management';document.querySelector('.page-links')?.append(link);}
   rows=await fetchRows();apply();
   const research=!document.body.dataset.page,presentation=document.body.dataset.page==='presentations',teamPage=document.body.dataset.page==='team';
