@@ -1,64 +1,41 @@
-# Deploy the shared edition
+# M.I.D.A.S. shared workspace
 
-## New M.I.D.A.S. features
+Website: https://andreaspoimen.github.io/3rd-Year-Project/
+Owner page: https://andreaspoimen.github.io/3rd-Year-Project/team.html
 
-All pages include the full project name, a direct ScienHub editor button and the supplied Teams General-channel link. The Teams link opens the channel; choose its Files tab for shared PowerPoints.
+## Accounts and one-time approval
 
-Every literature detail popup now has copy buttons for a plain author–date reference, BibTeX and a LaTeX cite command. Edit bibliography details in Add literature / Edit record. Missing fields are flagged, not invented. Manual author names should be separated by semicolons (for example Smith, Jane; Jones, Alex). Generated references should be checked against the required submission style.
+1. A teammate opens the website, chooses Create account / request access, and enters a name, email and password.
+2. They see Waiting for owner approval. They cannot read project records or other applications.
+3. The owner opens Team management, finds the pending request, chooses Editor or Viewer, then confirms approval.
+4. Approved members sign in normally thereafter. Approval does not expire on logout. The owner can change their role or revoke it later.
 
-Import accepts bare DOIs, DOI URLs and web addresses with or without https://. DOI metadata tries Crossref then DataCite. Browser-accessible HTML pages can provide citation/meta tags. Blocked pages, private links, PDFs without an identified DOI and unavailable sources still support custom entries: enter the title and source link yourself. No proxy receives your source URLs, and restricted pages are not bypassed.
+Owners cannot remove or demote an owner from this page. Owner decisions are recorded in the database audit table. Membership is tied to the approved account ID, so typing an approved email into a different account does not grant access. Passwords are handled by Supabase and are not available to the owner.
 
-Presentation Studio is a fourth page with saved decks, four editable slide layouts, ordering, duplication, notes, per-deck word search, presentation mode, editable JSON import/export and standalone HTML export. Open the HTML and use Print / Save as PDF. It does not import or export PPTX. Use the Teams shortcut for existing PowerPoints. Each deck saves independently with revision checks; no extra SQL migration is required because it uses the existing diagram record type. New decks and edits share only when Save presentation is clicked. Exports may include unsaved edits.
+### Required one-time Supabase setup
 
-Local QA used an isolated mock database, including a successful real Crossref metadata lookup, custom entry creation, BibTeX copying and presentation creation/saving. No QA records were added to the team database.
+Run the separately supplied 02-team-approval.sql after the original database setup. It must show Team approval ready with at least one owner. The current owner must have signed in at least once before migration. It preserves project data and binds existing approved users to account IDs.
 
-Upload every file in this folder, including vendor/, to the existing GitHub Pages publishing folder. Replace the matching files beside the existing index.html. Do not upload only the ZIP or put this folder inside another folder. No build is needed.
+For free registration without an SMTP provider, enable new sign-ups and disable Confirm email in Supabase Authentication / Sign In / Providers. Do this only after installing the approval migration. Email addresses are then self-declared: approve only people whose identity you recognise independently. The project remains inaccessible until approval. Do not add unconfirmed people directly to of_team by email; use the Team management page.
 
-The Supabase public endpoint and publishable key are configured. The owner has run the database setup and configured the production sign-in redirect. The library starts empty. The default project outline and subsystem diagrams remain available until first saved. Existing standalone browser data is not imported or erased.
+Email-link sign-in remains available subject to Supabase email restrictions. Password reset emails need SMTP; without it, contact the owner for account recovery. No paid service has been enabled.
 
-## Verify after deployment
+## Shared editing
 
-1. Wait for GitHub Pages to finish deploying, then hard refresh the site.
-2. Sign in using your approved owner email and open the emailed link.
-3. Add a temporary literature item. Wait for “All changes saved”. Check it from another signed-in browser.
-4. Edit the outline and verify it in the other browser. Open forms defer incoming updates; use Load latest when finished.
-5. Test simultaneous changes to the same record. A stale save should show a conflict. Export that draft, then Load latest.
-6. Open History & restore and restore an earlier version.
+The cloud status is authoritative. Literature and notes save independently. Project outline, subsystem trees and block diagram form one versioned design record. Each presentation has its own version. Conflicting saves pause rather than overwrite another member. Export a draft, then Load latest to recover. Live refresh is deferred while editing. Server permissions change immediately on revocation; open pages recheck membership every 30 seconds.
 
-The sign-in screen and simulated save/conflict flows have been checked locally. Signed-out requests were verified to be denied by the actual database. Authenticated saves, email delivery, Realtime and two-account behaviour still require this deployment test.
+The History panel shows the latest 100 revisions, including recoverable removed records. Earlier versions remain in the database. A restored version becomes a new revision. Imports are saved record by record and may partially complete if interrupted.
 
-## Approve colleagues
+## Literature and citations
 
-Run the following in Supabase SQL Editor, replacing the example address with the colleague's exact email. Use editor for editing or viewer for reading:
+CSV and exported JSON are supported; export Excel sheets as CSV first. Reads are paginated. DOI lookup tries Crossref and DataCite. Page metadata works where browser access is permitted. Manual title/link entry always remains available for blocked pages or sources without metadata.
 
-```sql
-insert into public.of_team (email, role)
-values ('colleague@example.com', 'editor')
-on conflict (email) do update set role = excluded.role;
-```
+Each literature record offers author-date reference, BibTeX and LaTeX cite-command copy buttons. Edit journal, DOI, publisher and pages in the bibliography section. Separate manual authors with semicolons. Check generated citations against the required submission style.
 
-They then sign in through the website. Keep email confirmation enabled. Supabase's default test email service restricts recipients and volume; if it rejects colleague addresses, configure custom SMTP before team rollout. Do not weaken database policies to fix email delivery.
+## Presentations and team links
 
-### Free alternative when email delivery is restricted
+Presentation Studio supports saved decks, four layouts, ordering, duplication, speaker notes, search, presentation view, JSON editing and standalone HTML export. Open the HTML and use Print / Save as PDF. PPTX import/export is not implemented. The Teams shortcut opens the supplied General channel; use its Files tab for shared PowerPoints. ScienHub opens the team's LaTeX editor directly.
 
-Use Supabase Authentication → Users → Add user → Create user to create each approved colleague's email/password account. Confirm the account in that admin workflow, and add the same email to of_team as above. The colleague selects “Sign in with a password instead” on the website. They do not need a Supabase dashboard account. The owner should handle initial credentials privately, never in a public repository or this chat. This avoids sending sign-in emails and does not require a paid SMTP provider. Password recovery then needs the owner's help unless SMTP is configured. Keep public email verification settings enabled.
+## Deployment
 
-## Saving and recovery
-
-- Literature items and stage notes save independently.
-- The outline, subsystems, bubble graphs and overview connections save as one versioned design record to keep linked changes together. Simultaneous design edits can conflict; there is no automatic graph merge.
-- The top cloud status is authoritative. Imports save one record at a time and can partially complete if interrupted; reimport skips duplicates.
-- Failed or conflicting saves pause further saves. Export current draft, then Load latest. An earlier cached unsaved draft can be downloaded on reopening. Raw unsaved form text appears under formDraft in exports for manual recovery.
-- Deleted records are recoverable flags. History shows the latest 100 revisions across the workspace; older history remains in the database. Restore creates a new revision.
-- Realtime updates refresh idle pages. Open forms and active edits defer refresh. A 30-second polling fallback checks idle pages; manual Load latest is also available.
-- Viewer accounts cannot save. Attempts display a warning; Load latest discards their local changes.
-
-## Import
-
-Research accepts CSV and exported JSON, including the original literature CSV headings. Export Excel sheets to CSV first; XLSX is not supported directly. Reads are paginated, so more than 200 or 1,000 literature items will not be silently truncated.
-
-Import design JSON on the overview/subsystems page and the same file on the research page to merge literature and notes.
-
-## Dependency
-
-vendor/supabase.js is the official @supabase/supabase-js 2.117.2 UMD bundle from jsDelivr; its MIT licence is included. No authentication CDN is needed at runtime. Never put a service-role key or secret key in this website.
+Publish all website files including vendor/ from the repository root. No build step is required. cloud-config.js contains a public publishable key; never replace it with a secret/service-role key. The Supabase library is vendored with its MIT licence. Free Supabase projects can pause after a week of low activity.
