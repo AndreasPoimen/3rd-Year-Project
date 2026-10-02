@@ -49,7 +49,7 @@
   if(!role){await MidasAccounts.waiting(client,gate,msg,session.user);return;}
   window.OrbitalCloud.role=()=>role;window.OrbitalCloud.teamClient=()=>client;
   MidasAccounts.passwordSettings(client,bar,session.user.email);
-  if(role==='owner'){const link=document.createElement('a');link.href='team.html';link.textContent='05 Team management';document.querySelector('.page-links')?.append(link);}
+  if(role==='owner'){const link=document.createElement('a');link.href='team.html';link.textContent='Team management';document.querySelector('.page-links')?.append(link);}
   rows=await fetchRows();apply();
   const research=!document.body.dataset.page,presentation=document.body.dataset.page==='presentations',teamPage=document.body.dataset.page==='team';
   for(const src of research?['references.js','markdown.js','app.js','research-enhancements.js','literature-tools.js']:presentation?['presentations.js']:teamPage?['team.js']:['graph-editor.js','design-pages.js'])await loadScript(src);
