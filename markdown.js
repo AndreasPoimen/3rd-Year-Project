@@ -17,5 +17,7 @@
   }
   return out.join('\n')+'\n';
  }
- const api={generate};root.MidasMarkdown=api;if(typeof module!=='undefined')module.exports=api;
+ function paper(record,stages=[]){return generate([record],stages).replace('# M.I.D.A.S. literature library','# M.I.D.A.S. literature record').replace('This snapshot includes the entire loaded library, regardless of search or filters.','This file contains the selected literature record.');}
+ function filename(record){const title=String(record.title||'literature-record').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,110)||'literature-record';return 'MIDAS-'+title+'.md';}
+ const api={generate,paper,filename};root.MidasMarkdown=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
