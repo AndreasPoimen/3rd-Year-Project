@@ -39,6 +39,10 @@ on conflict (email) do update set role = excluded.role;
 
 They then sign in through the website. Keep email confirmation enabled. Supabase's default test email service restricts recipients and volume; if it rejects colleague addresses, configure custom SMTP before team rollout. Do not weaken database policies to fix email delivery.
 
+### Free alternative when email delivery is restricted
+
+Use Supabase Authentication → Users → Add user → Create user to create each approved colleague's email/password account. Confirm the account in that admin workflow, and add the same email to of_team as above. The colleague selects “Sign in with a password instead” on the website. They do not need a Supabase dashboard account. The owner should handle initial credentials privately, never in a public repository or this chat. This avoids sending sign-in emails and does not require a paid SMTP provider. Password recovery then needs the owner's help unless SMTP is configured. Keep public email verification settings enabled.
+
 ## Saving and recovery
 
 - Literature items and stage notes save independently.
