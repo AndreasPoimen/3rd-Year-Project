@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-03T21:01:11.761837+00:00",
+  "sources": [
+    {
+      "name": "NASA",
+      "url": "https://www.nasa.gov/feed/",
+      "ok": true,
+      "matched": 1,
+      "checkedAt": "2026-10-03T21:01:11.761837+00:00"
+    },
+    {
+      "name": "ESA space news",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
+      "ok": true,
+      "matched": 0,
+      "checkedAt": "2026-10-03T21:01:11.761837+00:00"
+    },
+    {
+      "name": "ESA engineering",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
+      "ok": true,
+      "matched": 1,
+      "checkedAt": "2026-10-03T21:01:11.761837+00:00"
+    }
+  ],
+  "items": [
+    {
+      "id": "9303edfce056f1aa358aa8cc",
+      "title": "Heading Home: NASA’s SpaceX Crew-12 Concludes Station Science Mission",
+      "url": "https://www.nasa.gov/missions/station/iss-research/heading-home-nasas-spacex-crew-12-concludes-station-science-mission/",
+      "source": "NASA",
+      "published": "2026-10-02T19:30:00+00:00",
+      "capturedAt": "2026-10-03T21:01:11.761837+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
+    {
+      "id": "e7ce7395a6b2ee08750e7de3",
+      "title": "MIRROR robot reflects future of in-orbit assembly",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/MIRROR_robot_reflects_future_of_in-orbit_assembly",
+      "source": "ESA engineering",
+      "published": "2026-09-25T09:45:00+02:00",
+      "capturedAt": "2026-10-03T21:01:11.761837+00:00",
+      "companyIds": [],
+      "matchReason": "Matched in-space assembly — relevance requires review"
+    }
+  ],
+  "coverage": "NASA and ESA RSS headlines; not exhaustive. Company profiles remain unchanged until team review."
+}

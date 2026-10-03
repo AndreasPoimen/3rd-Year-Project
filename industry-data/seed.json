@@ -1,0 +1,1519 @@
+{
+  "importedAt": "2026-10-03",
+  "sourceLabel": "User-supplied ISAM table; claims have not been independently verified",
+  "sectors": [
+    {
+      "id": "sector-1",
+      "title": "Life extension and servicing",
+      "color": "#62debf"
+    },
+    {
+      "id": "sector-2",
+      "title": "Refuelling and propellant logistics",
+      "color": "#7da9ff"
+    },
+    {
+      "id": "sector-3",
+      "title": "Inspection and rendezvous/proximity operations (RPO)",
+      "color": "#d2a3ff"
+    },
+    {
+      "id": "sector-4",
+      "title": "Active debris removal and end-of-life services",
+      "color": "#ff899d"
+    },
+    {
+      "id": "sector-5",
+      "title": "Robotics and standard interfaces",
+      "color": "#ffc16d"
+    },
+    {
+      "id": "sector-6",
+      "title": "In-space assembly",
+      "color": "#8cd7ee"
+    },
+    {
+      "id": "sector-7",
+      "title": "In-space manufacturing",
+      "color": "#bed880"
+    },
+    {
+      "id": "sector-8",
+      "title": "In-orbit recycling",
+      "color": "#efa5d5"
+    }
+  ],
+  "companies": [
+    {
+      "id": "industry-company-b588f6801a03f4",
+      "name": "Northrop Grumman",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Northrop Grumman SpaceLogistics (USA)",
+          "description": "Mission Extension Vehicle (MEV) docks to client satellites and takes over station-keeping. Mission Robotic Vehicle (MRV) uses two robotic arms (DARPA/NRL RSGS payload) to install Mission Extension Pods (MEPs) as add-on propulsion.",
+          "status": "MEV-1 serviced Intelsat 901 (2020–25) and Optus D3 (2025–Aug 2026); MEV-2 docked to Intelsat 10-02 in 2021. MRV and three MEPs launched 21 Jul 2026. Under Optus's Project Aurora, the MRV is to install an MEP on Optus D3 in late 2027 (up to six years' extension); SES is also a customer."
+        },
+        {
+          "sector": "sector-2",
+          "organisation": "Northrop Grumman (USA)",
+          "description": "Passive and Active Refuelling Modules (PRM/ARM); GAS-T GEO tanker carrying up to 1000 kg of hydrazine.",
+          "status": "PRM selected as USSF preferred refuelling interface (2024). USSF Elixir refuelling demonstration awarded Apr 2025; launch date undisclosed."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-4b5317499060ef",
+      "name": "Starfish Space",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Starfish Space (USA)",
+          "description": "Otter servicer docks with satellites not designed for servicing, for life extension, inspection or disposal.",
+          "status": "Otter Pup 1 (2023) completed RPO without docking; Otter Pup 2 (2025) is attempting to dock with Gilmour's ElaraSat. First full Otter launched 1 Oct 2026 for NASA SSPICY (inspections from 2027). Intelsat and USSF GEO missions and an SDA disposal mission (2027) under contract."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-6afb8824fd613f",
+      "name": "Katalyst Space Technologies",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Katalyst Space Technologies (USA)",
+          "description": "Robotic capture and reboost of spacecraft not designed for servicing. Acquired Atomos Space (2025).",
+          "status": "LINK launched 3 Jul 2026 to reboost NASA's Swift. Two of three reaction wheels failed and the cold-gas RCS was degraded, causing a tumble. Reboost abandoned 19 Aug 2026 after RPO to 12–15 km; LINK re-entered 25 Sep 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-0e3f48cc98c485",
+      "name": "Astroscale",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Astroscale U.S. (USA, Japan)",
+          "description": "LEXI-P servicer docks with GEO satellites and provides attitude and orbit control for life extension.",
+          "status": "In development after repeated slips; expected to be launch-ready in 2027."
+        },
+        {
+          "sector": "sector-2",
+          "organisation": "Astroscale U.S. (USA)",
+          "description": "APS-R refueller transfers hydrazine to USSF satellites in GEO and tops up at an Orbit Fab depot.",
+          "status": "Launch slipped from mid-2026 to 2027 on a USSF mission. First client is an AFRL Tetra-5 satellite."
+        },
+        {
+          "sector": "sector-3",
+          "organisation": "Astroscale (Japan)",
+          "description": "Close-range inspection of non-cooperative objects (ADRAS-J, ISSA-J1).",
+          "status": "ADRAS-J approached an H-IIA upper stage to ≈15 m (Dec 2024), the closest commercial approach to large debris. ISSA-J1 to inspect two retired Japanese satellites (ALOS, ADEOS-II); launch 2027."
+        },
+        {
+          "sector": "sector-4",
+          "organisation": "Astroscale (Japan, UK)",
+          "description": "Removal of prepared satellites via magnetic docking plate (ELSA) and capture of unprepared rocket bodies (ADRAS-J2).",
+          "status": "ELSA-d (2021) demonstrated magnetic capture. ADRAS-J2 launch FY2027; ELSA-M (OneWeb) slipped to FY2028 or later, both on Isar Spectrum. Lost UK national ADR contract to ClearSpace (Aug 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-fe2ff65d44931b",
+      "name": "Infinite Orbits",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Infinite Orbits (France)",
+          "description": "Endurance vehicle (≈750 kg) docks with unprepared GEO satellites for ≈5 years of life extension. OrbitGuard smallsats provide GEO inspection.",
+          "status": "OrbitGuard-1 in GEO since 2023. Endurance orders from Hispasat, SES (Nov 2025) and Eutelsat (Sep 2026); first launch planned 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-51136d0e82134b",
+      "name": "D-Orbit",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "D-Orbit (Italy)",
+          "description": "GEA servicer (ESA RISE mission) docks with GEO satellites and takes over attitude and orbit control for life extension, relocation or disposal.",
+          "status": "EUR 119.6M ESA contract (Oct 2024), with Eutelsat as partner. Launch planned 2028."
+        },
+        {
+          "sector": "sector-4",
+          "organisation": "D-Orbit (Italy)",
+          "description": "D3 propulsive decommissioning device for controlled de-orbit, even of unresponsive satellites.",
+          "status": "Demonstrated on D-SAT (2017)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-34451eec744fee",
+      "name": "Thales Alenia Space",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Thales Alenia Space (Italy, France)",
+          "description": "EROSS IOD: robotic servicer with a Leonardo arm for capture, refuelling and payload exchange in LEO.",
+          "status": "EUR 235M Italian Space Agency contract (2023). System preliminary design review completed (Oct 2025); launch date not announced."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-28b386807b3dba",
+      "name": "Kurs Orbital",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Kurs Orbital (Italy, Ukraine)",
+          "description": "ARCap autonomous rendezvous-and-capture module for non-cooperative targets (life extension, relocation, debris removal).",
+          "status": "Seed-funded (US$4M); no flight yet. First ARCap flight was earlier targeted for 2025–26."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-caef4fc9f7995c",
+      "name": "InspeCity",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "InspeCity (India)",
+          "description": "VEDA servicer with a docking and propellant-transfer interface for life extension, refuelling and de-orbit.",
+          "status": "Raised ≈US$10.5M (Aug 2026) to fund four in-orbit demonstration missions over 12–18 months."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-50e68194a0369d",
+      "name": "Exotrail",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Exotrail (France)",
+          "description": "Electric-propulsion spacevan transfer vehicle, being extended to rendezvous, docking and in-orbit services (CNES study).",
+          "status": "Spacevan-002 delivered NASA's AEPEX cubesat (May 2026). First GEO spacevan manifested on Ariane 64 (planned H2 2026); further CNES GEO mission planned 2028."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ea908a5e0ec2b2",
+      "name": "Arkisys",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Arkisys (USA)",
+          "description": "Modular Port platform to host, service and integrate payloads in orbit, with a Cutter vehicle for docking and transfer.",
+          "status": "Commercial sustaining partner for NASA's Astrobee free-flying robots on the ISS (back in operation Jan 2026). Cutter first flight planned late 2026 to early 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-942a7daadd6c72",
+      "name": "Rogue Space Systems",
+      "programmes": [
+        {
+          "sector": "sector-1",
+          "organisation": "Rogue Space Systems (USA)",
+          "description": "Robotic spacecraft (Orbots) for inspection (Laura) and relocation and servicing (Fred).",
+          "status": "Barry-1 sensor and computing testbed flown (Nov 2023); AFRL research agreement. Laura-1 RPO demonstration (targeted 2025) not yet reported flown."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-5408b03cada150",
+      "name": "Orbit Fab",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "Orbit Fab (USA)",
+          "description": "Hydrazine depots and tankers using the RAFTI refuelling port and GRIP nozzle.",
+          "status": "Tanker-001 Tenzing (2021) and Podracer (hosted on Momentus Vigoride, Mar 2026) in LEO. RAFTI accepted by USSF. Kamino GEO depot (with Impulse Space) planned 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-f20931f776ecce",
+      "name": "China Academy of Space Technology",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "China Academy of Space Technology (CAST, China)",
+          "description": "Shijian-25 GEO refuelling and life-extension servicer. Shijian-21 had towed a dead BeiDou satellite to graveyard orbit (2022).",
+          "status": "SJ-25 (launched Jan 2025) docked with SJ-21 in mid-2025; separation observed Nov 2025. Widely assessed as the first GEO satellite-to-satellite refuelling; not officially detailed."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-21e703985f5601",
+      "name": "Sustain Space",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "Sustain Space (China)",
+          "description": "Flexible continuum robotic arm for autonomous refuelling; drag-sphere de-orbit device.",
+          "status": "Xiyuan-0 launched 16 Mar 2026; completed refuelling simulations with its arm and deployed a 2.5 m drag sphere."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-104ccfb86d8d96",
+      "name": "OrbitAID Aerospace",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "OrbitAID Aerospace (India)",
+          "description": "Standardised docking and refuelling interface; tanker and target smallsats for LEO refuelling.",
+          "status": "AayulSAT lost in the PSLV-C62 failure (12 Jan 2026). Two-satellite docking, refuelling and orbit-raising demonstration targeted Q1 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-e78bdebae03109",
+      "name": "SpaceX",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "SpaceX (USA)",
+          "description": "Starship ship-to-ship cryogenic propellant transfer, required for the Artemis lunar lander (HLS).",
+          "status": "Not yet flown; demonstration no earlier than late 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ad996e9a7e5ed0",
+      "name": "Eta Space",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "Eta Space (USA)",
+          "description": "LOXSAT liquid-oxygen fluid-management demonstrator (NASA Tipping Point), precursor to the Cryo-Dock depot (2030).",
+          "status": "Integrated on a Rocket Lab Photon bus. Electron launch has slipped repeatedly since Jul 2026; not flown as of late Sep 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-0af1be88c0ee21",
+      "name": "Blue Origin",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "Blue Origin (USA)",
+          "description": "Blue Ring mobility platform for hosting, transport and in-orbit refuelling from MEO to cislunar space.",
+          "status": "Blue Ring Pathfinder flew attached to the New Glenn upper stage (Jan 2025). No free-flying Blue Ring mission yet."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-3c843e78ca8224",
+      "name": "Manastu Space",
+      "programmes": [
+        {
+          "sector": "sector-2",
+          "organisation": "Manastu Space (India)",
+          "description": "Hydrogen-peroxide green propulsion aimed at in-orbit refuelling, life-extension and de-orbit services.",
+          "status": "Green-propulsion system test-fired on PSLV-C60's POEM-4 platform (Dec 2024). Refuelling, life-extension and de-orbit services under development."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-c847afc45b20de",
+      "name": "HEO",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "HEO (Australia)",
+          "description": "Non-Earth imaging of space objects using hosted cameras and repurposed Earth-observation satellites.",
+          "status": "Commercial inspection service operating in LEO, including RPO around a CZ-2C rocket body. GEO capability targeted late 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-f2bd8565507e37",
+      "name": "Turion Space",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "Turion Space (USA)",
+          "description": "DROID spacecraft for space-domain awareness and inspection, evolving towards docking and de-orbit.",
+          "status": "DROID.001 (2023) and DROID.002 (Mar 2025) flown; DROID.003 planned 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-73a5cc13937d8a",
+      "name": "True Anomaly",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "True Anomaly (USA)",
+          "description": "Jackal autonomous vehicles for RPO and characterisation of non-cooperative objects.",
+          "status": "Jackal pursued an evading Rocket Lab spacecraft in the USSF Victus Haze demonstration (Jun–Jul 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-e0b341afd7d9da",
+      "name": "Space Machines Company",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "Space Machines Company (Australia)",
+          "description": "Optimus servicing and inspection spacecraft; Optimus Viper for rapid-response inspection.",
+          "status": "Optimus-1 (Mar 2024) lost contact after launch. 450 kg Optimus for the Space MAITRI debris-inspection mission on ISRO's SSLV, no earlier than Q4 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-c376013522845b",
+      "name": "Lockheed Martin",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "Lockheed Martin (USA)",
+          "description": "LINUSS cubesats demonstrating near-GEO RPO for in-space upgrade and servicing.",
+          "status": "Two 12U cubesats (launched Nov 2022) manoeuvred to within ≈200 m of each other (2023)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-e0c5d2cb36a59d",
+      "name": "Scout Space",
+      "programmes": [
+        {
+          "sector": "sector-3",
+          "organisation": "Scout Space (USA)",
+          "description": "Owl optical sensors with onboard AI for characterising space objects and supporting RPO.",
+          "status": "First Owl awaits launch on Blue Origin's first Blue Ring mission (planned spring 2026, not yet flown). US$18M Series A (May 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-12c5752ecd38dc",
+      "name": "ClearSpace",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "ClearSpace (Switzerland, UK)",
+          "description": "Multi-arm robotic capture and de-orbit of unprepared objects; Phoenix GEO life-extension vehicle.",
+          "status": "UK national ADR contract (GBP 61.3M, Aug 2026) to remove two UK satellites by the early 2030s. ESA ClearSpace-1 (target PROBA-1) ≈2028–29; PRELUDE RPO demonstration 2027; ESA Phoenix contract (Sep 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ae276835fb935f",
+      "name": "Kall Morris Inc.",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Kall Morris Inc. (USA)",
+          "description": "Laelaps relocation and de-orbit spacecraft with the REACCH multi-arm grappling end-effector.",
+          "status": "REACCH prototype completed 172 capture cycles on the ISS (Nov 2024–May 2025). First full spacecraft planned 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-f73f147c827b84",
+      "name": "TransAstra",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "TransAstra (USA)",
+          "description": "Inflatable Capture Bag that envelops tumbling debris or small asteroids.",
+          "status": "Capture Bag deployed and inflated on the ISS (Oct 2025)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-e29c4e688579ec",
+      "name": "Orbital Lasers",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Orbital Lasers (Japan)",
+          "description": "Space-based pulsed-laser ablation to detumble and de-orbit debris (SKY Perfect JSAT spin-off).",
+          "status": "Prototype planned 2027; services targeted from 2029."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-6f5fe611a04b3d",
+      "name": "EX-Fusion",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "EX-Fusion (Japan)",
+          "description": "Ground-based lasers to slow and de-orbit small (<10 cm) debris.",
+          "status": "Seed-funded; ground development."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-d0d2a069bf692a",
+      "name": "Origin Space",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Origin Space (China)",
+          "description": "Small-body and debris capture technologies for resource and debris missions.",
+          "status": "NEO-01 microsatellite (Apr 2021) launched to trial net-based debris capture."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-2100d4c446ecdb",
+      "name": "Kawasaki Heavy Industries",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Kawasaki Heavy Industries (Japan)",
+          "description": "DRUMS microsatellite demonstrating approach to and capture of debris.",
+          "status": "DRUMS (launched Nov 2021) released mock debris and demonstrated approach and simulated capture (Dec 2023)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-b91f2a1435cba8",
+      "name": "Electro Optic Systems",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Electro Optic Systems (Australia)",
+          "description": "Laser tracking of debris; high-power laser to de-orbit satellites by ablation or photon pressure.",
+          "status": "Operates laser debris-tracking stations. High-power laser de-orbit demonstration expected ≈2027 (announced Sep 2025)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-84604d0a5329d8",
+      "name": "HPS GmbH",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "HPS GmbH (Germany)",
+          "description": "ADEO deployable drag sails (1.7–25 m2) for passive de-orbit.",
+          "status": "ADEO sail deployed in orbit from D-Orbit's ION carrier (Dec 2022). 25 m2 ADEO-L integrated on the Redwire-built EU demonstration satellite Σyndeo-3, launch planned 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-5ea0863d478ea9",
+      "name": "Vestigo Aerospace",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "Vestigo Aerospace (USA)",
+          "description": "Spinnaker drag sails to de-orbit satellites and upper stages of up to 1000 kg.",
+          "status": "Acquired by Applied Aerospace & Defense (Feb 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-c67c1263651459",
+      "name": "BULL",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "BULL (Japan)",
+          "description": "HORN mechanically deployed drag sail for post-mission disposal.",
+          "status": "First in-orbit demonstration on H3 Flight 6 succeeded (Jun 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-668fb65de03810",
+      "name": "OrbitGuardians",
+      "programmes": [
+        {
+          "sector": "sector-4",
+          "organisation": "OrbitGuardians (USA)",
+          "description": "SWEEPER spacecraft using computer vision and AI to capture and de-orbit debris.",
+          "status": "Concept stage; first mission planned to de-orbit 40 objects (announced 2024), not yet flown."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-4c460a606d7021",
+      "name": "MDA Space",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "MDA Space (Canada)",
+          "description": "Space robotics with Canadarm heritage; SKYMAKER commercial robotics for servicing and assembly.",
+          "status": "Canadarm3 (C$1.0B contract, no earlier than 2029) continues, but its use is uncertain after NASA paused Gateway (2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ded799f25773a3",
+      "name": "GITAI",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "GITAI (Japan, USA)",
+          "description": "Autonomous robotic arms and robotic servicing satellites (RPO, docking, life extension, de-orbit).",
+          "status": "S2 arm demonstrated outside the ISS (Mar 2024). S3 servicing-satellite flight model completed (Jun 2026); launch deferred beyond 2028 to prioritise USSF interceptor work."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-be1293ff931ff1",
+      "name": "iBOSS",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "iBOSS (Germany)",
+          "description": "iSSI androgynous mechanical, power and data interface for modular, serviceable spacecraft.",
+          "status": "Flight-proven on the ISS (TRL 7). SpaceDREAM arm-and-interface demonstration with KINETIK Space awaits RFA One's maiden flight."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-15d3fefb8b3f40",
+      "name": "Obruta Space Solutions",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "Obruta Space Solutions (Canada)",
+          "description": "Off-the-shelf rendezvous, proximity operations and docking (RPOD) kit.",
+          "status": "RPO software tested in orbit for 17 months. CSA funding (C$1M, 2025–27) to mature hardware for a first flight."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-0fd90503e652e0",
+      "name": "Motiv Space Systems",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "Motiv Space Systems (USA)",
+          "description": "xLink modular robotic arms; ModuLink robotics kit (with Blue Origin) for servicing and reconfiguring spacecraft.",
+          "status": "DIU ModuLink contract with Blue Origin (2022). xLink's planned flight on OSAM-2 lapsed when NASA ended that mission (2023)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-aa1ca9035bd95a",
+      "name": "PIAP Space",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "PIAP Space (Poland)",
+          "description": "TITAN 7-DoF robotic arm for on-orbit servicing and debris removal.",
+          "status": "ESA-funded prototype (contract >EUR 2.5M, 2020) completed environmental testing (2025); ready for integration into servicing missions."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-5029a084ac6f78",
+      "name": "SENER",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "SENER (Spain)",
+          "description": "SIROM standard interface combining mechanical, electrical, data and thermal connections.",
+          "status": "13 units built and ground-validated in EU and ESA projects; preparing an in-orbit demonstration."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-35d80cad044a62",
+      "name": "Space Applications Services",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "Space Applications Services (Belgium)",
+          "description": "HOTDOCK standard interface (mechanical, data, power, fluid) for robotic servicing and assembly.",
+          "status": "Used in several EU and ESA ground demonstrations; no flight reported."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-b144142b4eab8d",
+      "name": "Altius Space Machines",
+      "programmes": [
+        {
+          "sector": "sector-5",
+          "organisation": "Altius Space Machines (Voyager Technologies, USA)",
+          "description": "DogTag universal grapple fixtures that make satellites easier to capture for servicing or removal.",
+          "status": "More than 300 DogTags flown on OneWeb satellites (by Feb 2022)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-dc8396e3e6d389",
+      "name": "Lanteris Space Systems",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "Lanteris Space Systems (USA; formerly Maxar)",
+          "description": "SPIDER robotic arm to assemble a 3 m antenna on NASA's OSAM-1.",
+          "status": "OSAM-1 cancelled by NASA (Mar 2024). Lanteris acquired by Intuitive Machines (Jan 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-2a952a115e1b2e",
+      "name": "Rendezvous Robotics",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "Rendezvous Robotics (USA)",
+          "description": "TESSERAE electromagnetic tiles that self-assemble into large structures.",
+          "status": "Two ISS demonstrations completed; third ISS test in 2026. First free-flying autonomous assembly mission planned late 2026 or early 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ae182a8a5479ef",
+      "name": "ThinkOrbital",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "ThinkOrbital (USA)",
+          "description": "Electron-beam welding, cutting and robotic assembly of large platforms (ThinkPlatform); also proposes harvesting aluminium debris for recycling into fuel.",
+          "status": "Autonomous e-beam welds made on a recoverable Falcon 9-hosted payload (May 2024) and returned; second flight Dec 2024. ThinkPlatform-1 ≈2027–28."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-c3f86bc50a04d6",
+      "name": "Orbital Composites",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "Orbital Composites (USA)",
+          "description": "Robotic in-space 3D printing and assembly of large (up to km-scale) RF antennas.",
+          "status": "USSF SBIR and other contracts (>US$3M); ground development with Axiom Space, Northrop Grumman and SwRI."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-91e986330d2bce",
+      "name": "Space Solar",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "Space Solar (UK)",
+          "description": "Robotic in-orbit assembly of the km-scale CASSIOPeiA space-based solar power satellite.",
+          "status": "AlbaTRUSS ground demonstration of robotic truss assembly with UKAEA (2025). In-orbit demonstrator planned 2028; power from space targeted for ≈2030."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-5d28066be7ee52",
+      "name": "Above: Space Development",
+      "programmes": [
+        {
+          "sector": "sector-6",
+          "organisation": "Above: Space Development (USA; formerly Orbital Assembly)",
+          "description": "Automated truss-building machine (DSTAR) for robotically assembled rotating stations.",
+          "status": "Full-scale DSTAR prototype demonstrated on the ground. Station projects unfunded; no flight hardware."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-3780bd37f8c85a",
+      "name": "Varda Space Industries",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Varda Space Industries (USA)",
+          "description": "Free-flying W-series capsules for microgravity pharmaceutical processing, also used as hypersonic re-entry testbeds.",
+          "status": "Six missions flown (2023–26), five capsules recovered (W-4 failed re-entry). W-8 and W-9 launched 1 Oct 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-5968455d3858c3",
+      "name": "Space Forge",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Space Forge (UK)",
+          "description": "ForgeStar free-flyers for semiconductor crystal growth; Pridwen deployable heat shield for return.",
+          "status": "ForgeStar-1 (Jun 2025) reached 1000 °C and generated plasma in its furnace (Dec 2025). ForgeStar-2, the first material-return attempt, planned 2026–27."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-6c802c6c502686",
+      "name": "Redwire",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Redwire (USA)",
+          "description": "ISS facilities for pharmaceutical crystallisation (PIL-BOX) and bioprinting (BFF); formerly Made In Space (Archinaut).",
+          "status": "Repeated PIL-BOX flights (Eli Lilly, BMS); bioprinted cardiac tissue (2024). Archinaut One (OSAM-2) ended by NASA before flight (2023)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-45e36e462c3d6e",
+      "name": "Airbus Defence and Space",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Airbus Defence and Space (Europe)",
+          "description": "ESA metal 3D printer (wire-fed, laser) on the ISS.",
+          "status": "First metal parts printed in orbit (2024). Samples returned for analysis 2025–26; fifth print retrieved 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-0f682db371526c",
+      "name": "Flawless Photonics",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Flawless Photonics (Luxembourg)",
+          "description": "Drawing ZBLAN fluoride-glass optical fibre in microgravity on the ISS.",
+          "status": "≈12 km of fibre drawn (2024). Space-drawn fibre showed lower attenuation (peer-reviewed, 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-4bd850e241151f",
+      "name": "LambdaVision",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "LambdaVision (USA)",
+          "description": "Layer-by-layer manufacture of protein-based artificial retinas in microgravity.",
+          "status": "Nine ISS investigations. First free-flyer mission (Helogen platform on a D-Orbit vehicle) scheduled for Oct 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-6988bb0c994da6",
+      "name": "Space Tango",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Space Tango (USA)",
+          "description": "Automated CubeLab and Mambo facilities for microgravity R&D and manufacturing on the ISS.",
+          "status": "Mambo facility delivered to the ISS (Aug 2024)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-26bf5f06eb8bad",
+      "name": "Astral Materials",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Astral Materials (USA)",
+          "description": "Microgravity crystal-growth furnace for high-purity silicon semiconductors.",
+          "status": "NASA parabolic-flight tests. Free-flyer demonstration with SpaceWorks (NASA TechLeap) planned 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-772601174982d7",
+      "name": "Orbital Matter",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Orbital Matter (Poland, Germany)",
+          "description": "Heat-free photopolymer 3D printing of structures in vacuum, e.g. solar-array supports.",
+          "status": "Replicator flew on the Ariane 6 maiden flight (Jul 2024). Replicator-2 launched 7 Jul 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-8f3f4a2a899234",
+      "name": "ATMOS Space Cargo (Germany) and Space Cargo Unlimited",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "ATMOS Space Cargo (Germany) and Space Cargo Unlimited (France)",
+          "description": "Phoenix re-entry capsules with inflatable heat shield, carrying the BentoBox platform for microgravity production and return.",
+          "status": "Phoenix 1 (Apr 2025) met primary objectives but was not recovered. Phoenix 2, first of seven BentoBox missions, scheduled for H2 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-8f761e17dfdbd8",
+      "name": "ElevationSpace",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "ElevationSpace (Japan)",
+          "description": "ELS-R small re-entry satellites for microgravity experiments and manufacturing with sample return.",
+          "status": "First satellite (AOBA) booked on Isar Spectrum for H2 2026; not yet launched."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-ce790f429dd4bd",
+      "name": "Sierra Space",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Sierra Space (USA)",
+          "description": "Dream Chaser spaceplane for low-g return of space-made products; manufacturing agreements with Astral Materials and Space Forge.",
+          "status": "Agreements signed Dec 2024. Dream Chaser first flight, now a free-flyer demonstration without ISS docking, slipped to late 2026."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-49248321179b13",
+      "name": "Helogen",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Helogen (USA)",
+          "description": "HEL-IOS autonomous orbital biomanufacturing system for biomaterials and proteins.",
+          "status": "Two missions scheduled for Oct 2026, one carrying LambdaVision's retina proteins on a D-Orbit vehicle."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-e9fb2867a71e3f",
+      "name": "Auxilium Biotechnologies",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Auxilium Biotechnologies (USA)",
+          "description": "AMP-1 microfabrication platform that prints nerve-repair implants and tissue in microgravity.",
+          "status": "AMP-1 on the ISS since Nov 2024; printed eight nerve implants (2025). AXLM-3 mission (returned Jun 2026) produced kidney, liver and cartilage tissue and 28 implants."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-7675462693f732",
+      "name": "Exobiosphere",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Exobiosphere (Luxembourg)",
+          "description": "Orbital High-Throughput Screener for automated drug screening (>2000 samples per mission).",
+          "status": "ISS mission contracted with Voyager (May 2026); agreement to fly on Outpost's Carryall return vehicle (Oct 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-7fa257cc4eee01",
+      "name": "BioOrbit",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "BioOrbit (UK)",
+          "description": "Microgravity crystallisation of monoclonal antibodies for high-concentration injectable formulations.",
+          "status": "Re-entry survivability test on The Exploration Company's capsule (2025). Baby BOX-E, the largest drug-crystallisation run in space to date, launched to the ISS (May 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-130a979a58b619",
+      "name": "United Semiconductors",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "United Semiconductors (USA)",
+          "description": "Bulk crystal growth of semiconductor and semimetal alloys in microgravity.",
+          "status": "ISS experiment in NASA's SUBSA furnace (launched Nov 2024). Payload reservation on Starlab for commercial-scale production (Mar 2026)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-c309191c26ca71",
+      "name": "Yuri",
+      "programmes": [
+        {
+          "sector": "sector-7",
+          "organisation": "Yuri (Germany)",
+          "description": "Microgravity lab and contract-research services (Lab-as-a-Service, ScienceTaxi) for biotech.",
+          "status": "More than 25 ISS research missions. ScienceTaxi BioForge bioprinter passed ESA critical design review (Jun 2026); first flight planned 2027."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-b43e05bd95ecae",
+      "name": "Orbit Recycling",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Orbit Recycling (Germany)",
+          "description": "Recover aluminium from old upper stages for in-space and lunar construction (ALReCo aluminium–regolith composite).",
+          "status": "Concept stage: ESA OSIP business-case study (2021) and ground prototypes. No flight mission announced."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-6951f9a6269425",
+      "name": "Neumann Space (Australia) and CisLunar Industries",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Neumann Space (Australia) and CisLunar Industries (USA)",
+          "description": "Melt captured debris into metal rods that Neumann's solid-metal electric thruster uses as propellant (CisLunar Modular Space Foundry).",
+          "status": "SpaceWERX Orbital Prime concept (US$1.7M, 2023) with Astroscale U.S. and Colorado State University. Neumann Drive flight-tested on several smallsats (2024–26)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-3545b40c72b833",
+      "name": "Paladin Space",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Paladin Space (Australia)",
+          "description": "Triton payload captures 20–50 small (<1 m) debris pieces per mission; designed to deliver them to future recycling stations.",
+          "status": "Ground demonstration (May 2025); not yet flown. Partnered with Portal Space Systems (Mar 2026) for a debris-removal service from 2027; ISS demonstration planned late 2026 or early 2027. Full capture units are currently ejected to burn up on re-entry rather than recycled."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-68e697db79ef50",
+      "name": "Magdrive",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Magdrive (UK)",
+          "description": "Solid-metal plasma thrusters that can use a wide range of metals, including recovered debris, as propellant.",
+          "status": "Rogue demonstration (launched Jun 2025, ended Feb 2026) verified charging and plasma generation but performed no manoeuvres. Warlock (2027) and Paladin (>1 N, 2028) thrusters planned."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-d842da984cbfa9",
+      "name": "Voyager Technologies",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Voyager Technologies (Nanoracks, USA)",
+          "description": "Outpost concept: robotic cutting and repurposing of spent upper stages into platforms and habitats.",
+          "status": "Outpost Mars Demo-1 (May 2022) cut corrosion-resistant steel in orbit by friction milling without creating debris. No follow-on flight reported."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-0de3beba139a20",
+      "name": "DEXTER consortium",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "DEXTER consortium (Cranfield Univ., SENER, Magdrive, Univ. Alicante, Moliri, Vimotek)",
+          "description": "Robotic harvesting tools, vacuum laser cutting and conversion of scrap aluminium into thruster propellant.",
+          "status": "EU-funded (EUR 4.0M, Oct 2025–Sep 2029); laboratory demonstrations under way."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-15851f563985e2",
+      "name": "Space Cowboy",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Space Cowboy (USA)",
+          "description": "Captures small debris and sorts it as feedstock for in-space additive manufacturing.",
+          "status": "Early-stage concept; no flight hardware announced."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-8e4bacfb3da5d3",
+      "name": "Tethers Unlimited",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Tethers Unlimited (AMERGINT, USA)",
+          "description": "Refabricator recycles plastic waste into 3D-printer filament; also KRAKEN robotic arm.",
+          "status": "Refabricator, the first integrated recycler and 3D printer in space, completed at least seven recycle-and-print cycles on the ISS (2019)."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    },
+    {
+      "id": "industry-company-22bb47ffd48798",
+      "name": "Gateway Earth Development Group",
+      "programmes": [
+        {
+          "sector": "sector-8",
+          "organisation": "Gateway Earth Development Group (academic consortium)",
+          "description": "Concept for an orbital station that repairs, repurposes and recycles defunct satellites.",
+          "status": "Concept studies only (published 2019); operation envisaged by 2050."
+        }
+      ],
+      "notes": "",
+      "verification": "imported",
+      "sourceUrl": "",
+      "checkedAt": "",
+      "sourceLabel": "Imported team assessment — supplied October 2026",
+      "deleted": false
+    }
+  ],
+  "sourceRows": 85
+}
