@@ -1,4 +1,4 @@
-import {initAnalytics} from './orbit-analytics.js';
+import {initAnalytics} from './orbit-analytics.js?v=2';
 import {categories,matches,dimensionLabel} from './orbit-catalogue.js';
 import {initExplorer} from './catalogue-explorer.js';
 import * as THREE from './vendor/orbits/three.module.min.js';

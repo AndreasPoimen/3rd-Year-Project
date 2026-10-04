@@ -16,9 +16,9 @@ export function initAnalytics({onHighlight,locate,canLocate}){
  svg+=`<g ${choice({mode,group:b.key,label:`${b.label} · all types`})}><rect x="${x0+i*step}" y="188" width="${step}" height="35" fill="transparent"/><text x="${x+barWidth/2}" y="207" text-anchor="${mode==='type'?'end':'middle'}" ${mode==='type'?`transform="rotate(-18 ${x+barWidth/2} 207)"`:''}>${esc(label)}</text><title>${esc(b.label)}: ${b.total.toLocaleString()} objects. Select whole column.</title></g>`;});
  $('#analyticsChart').innerHTML=svg;$('#analyticsLegend').innerHTML=Object.entries(categories).map(([category,c])=>`<button ${choice({mode,category,label:c.label+' · all columns'})}><i style="background:${c.color}"></i>${c.label}</button>`).join('');$('#analyticsCaption').textContent=mode==='year'?'Objects currently in orbit, grouped by launch year and present classification.':mode==='type'?'Current catalogue population by object type and activity status.':'Percentage of each body-length band by object type. Hover for exact counts. Unknown dimensions form their own column.';apply();}
  root.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const el=e.target.closest('[data-choice]');if(el&&!el.contains(e.relatedTarget)){preview=choices.get(el.dataset.choice);apply();}});
- root.addEventListener('pointerout',e=>{const el=e.target.closest('[data-choice]');if(el&&!el.contains(e.relatedTarget)){preview=null;apply();}});
+ root.addEventListener('pointerout',e=>{const el=e.target.closest('[data-choice]');if(el&&!el.contains(e.relatedTarget)&&preview){preview=null;apply();}});
  root.addEventListener('focusin',e=>{const el=e.target.closest('[data-choice]');if(el){preview=choices.get(el.dataset.choice);apply();}});
- root.addEventListener('focusout',()=>{preview=null;apply();});
+ root.addEventListener('focusout',()=>{if(preview){preview=null;apply();}});
  function pin(el){const next=choices.get(el.dataset.choice);pinned=pinned?.key===next.key?null:next;preview=null;apply();}
  root.addEventListener('click',e=>{const el=e.target.closest('[data-choice]');if(el)pin(el);});
  root.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('svg [data-choice]')){e.preventDefault();pin(e.target);}});
