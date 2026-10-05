@@ -37,9 +37,7 @@
   const bar=$('#cloud-bar');if(bar&&!bar.querySelector('.account-menu')){const buttons=all(':scope > button',bar);if(buttons.length){const d=fold(buttons,'Account & sync');d.classList.add('account-menu');}}
   // Password control is inserted asynchronously by the existing account module.
   if(bar?.querySelector('.account-menu'))all(':scope > button',bar).forEach(b=>$('.fold-content',bar).append(b));
-  const shortcuts=$('.workspace-shortcuts');if(shortcuts&&!shortcuts.closest('details'))fold([shortcuts],'Team links');
   const foot=$('aside .aside-bottom');if(foot&&!foot.dataset.tidy){foot.dataset.tidy='true';const actions=all(':scope > button,:scope > .filebtn',foot);if(actions.length)fold(actions,'Import & export');}
-  const research=$('.research-nav');if(research&&research.closest('aside')){$('main .heading').after(research);research.classList.add('workspace-research-tabs');}
   const notice=$('main > .notice');if(notice)fold([notice],'About this workspace');
  }
  function design(){const host=$('#designContent');if(!host)return;
@@ -65,22 +63,13 @@
   function showCompanies(e){if(e.type==='keydown'&&!['Enter',' '].includes(e.key))return;if(e.target.closest('[data-sector],[data-evidence]'))setTimeout(()=>{views.select(1,true);views.buttons[1].focus();},0);}
   $('#industryCharts').addEventListener('click',showCompanies,true);$('#industryCharts').addEventListener('keydown',showCompanies,true);
  }
- function orbits(){if(!$('.orbit-layout')||$('#orbit-views'))return;
-  const main=$('main'),layout=$('.orbit-layout');
-  tabs(main,'orbit-views',[{label:'Live orbit',nodes:[$('#categoryLegend'),$('#metadataStatus'),layout]},{label:'Object catalogue',nodes:[$('.extended-catalogue')]},{label:'Sources & coverage',nodes:['orbitStatus','catalogueAge','coverageCount','mapStatus','invalidCount'].map(id=>$('#'+id)).concat($('.orbit-sources'))}]);
-  const chart=$('#orbitAnalytics'),matches=$('#chartMatches');const d=fold([chart],'Population charts · linked to the globe');
-  if(d){matches.hidden=!d.open;d.addEventListener('toggle',()=>matches.hidden=!d.open);}
-  const controls=$('.orbit-controls'),sections=all(':scope > section',controls);const filters=sections.find(s=>s.contains($('#satSearch')));
-  if(filters){const sizeNodes=['sizeBasis','objectSize','includeEstimates'].map(id=>$('#'+id));const nodes=[];sizeNodes.forEach(el=>{if(el.id==='includeEstimates')nodes.push(el.closest('label'));else {const label=el.previousElementSibling;if(label?.tagName==='LABEL')nodes.push(label);nodes.push(el);}});const note=$('.orbit-note',filters);if(note)nodes.push(note);fold(nodes,'Size & dimension filters');}
-  const selected=sections.find(s=>s.contains($('#satName')));if(selected){const extra=['satMetaSource','satEpoch','satLatLon','satProvider','satAge','sourceLink'].map(id=>$('#'+id));fold(extra,'Orbital elements & source');}
- }
  function animateChanges(){document.addEventListener('click',e=>{const b=e.target.closest('button');if(b&&!b.disabled&&motion())b.animate([{filter:'brightness(1)'},{filter:'brightness(1.22)'},{filter:'brightness(1)'}],{duration:200});});
   document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button!==0||a.target||a.hasAttribute('download'))return;const u=new URL(a.href,location.href);if(u.origin===location.origin&&u.pathname!==location.pathname){document.body.classList.add('workspace-navigating');setTimeout(()=>document.body.classList.remove('workspace-navigating'),4000);}});
   addEventListener('pageshow',()=>document.body.classList.remove('workspace-navigating'));
   const observer=new MutationObserver(records=>{for(const r of records)if(r.type==='attributes'&&r.attributeName==='open'&&r.target.open)reveal(r.target);});observer.observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
  }
- function enhance(){shell();design();presentation();industry();orbits();}
- function start(){document.body.classList.add('workspace-minimal');enhance();animateChanges();
+ function enhance(){shell();design();presentation();industry();}
+ function start(){if($('.research-nav')||$('.orbit-layout')){animateChanges();return;}document.body.classList.add('workspace-minimal');enhance();animateChanges();
   let timer;new MutationObserver(records=>{if(records.some(r=>r.target.matches?.('main,body,#designContent,#presentationStudio,#cloud-bar')||[...r.addedNodes].some(n=>n.id==='cloud-bar'))){clearTimeout(timer);timer=setTimeout(enhance,0);}if(!document.activeElement?.matches('input,textarea,select'))for(const target of new Set(records.map(r=>r.target)))if(target.matches?.('#content,#teamContent'))reveal(target);}).observe(document.body,{childList:true,subtree:true});
   // Cross-panel search reveals the panel containing the first highlighted result.
   $('#designSearch')?.addEventListener('input',()=>setTimeout(()=>{const hit=$('#designContent .tabmatch');if(hit){const p=hit.closest('[role="tabpanel"]');if(p)document.getElementById(p.getAttribute('aria-labelledby'))?.click();let parent=hit.parentElement;while(parent&&parent.id!=='designContent'){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}}},0));
