@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <title>MIDAS orbital monogram</title>
+  <path d="M42 17.5a20 20 0 1 0-1 15.5" stroke="#6BE1CB" stroke-width="2" stroke-linecap="round"/>
+  <path d="M14 32V17l10 11 10-11v15" stroke="#E5F4F0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="42" cy="17.5" r="3" fill="#6BE1CB"/>
+</svg>
