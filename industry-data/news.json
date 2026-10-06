@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-10-05T16:20:00.527721+00:00",
+  "checkedAt": "2026-10-06T14:25:47.140376+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-10-05T16:20:00.527721+00:00"
+      "checkedAt": "2026-10-06T14:25:47.140376+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-05T16:20:00.527721+00:00"
+      "checkedAt": "2026-10-06T14:25:47.140376+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-10-05T16:20:00.527721+00:00"
+      "checkedAt": "2026-10-06T14:25:47.140376+00:00"
     }
   ],
   "items": [
+    {
+      "id": "4fdb28d7bb2823af19bc7de2",
+      "title": "NASA to Stream SpaceX Crew-12 Return, Splashdown Live",
+      "url": "https://www.nasa.gov/news-release/nasa-to-stream-spacex-crew-12-return-splashdown-live/",
+      "source": "NASA",
+      "published": "2026-10-05T21:44:40+00:00",
+      "capturedAt": "2026-10-06T14:25:47.140376+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
     {
       "id": "9303edfce056f1aa358aa8cc",
       "title": "Heading Home: NASA’s SpaceX Crew-12 Concludes Station Science Mission",
