@@ -1,29 +1,53 @@
 {
-  "checkedAt": "2026-10-07T14:42:32.467936+00:00",
+  "checkedAt": "2026-10-08T14:52:03.629633+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
-      "matched": 1,
-      "checkedAt": "2026-10-07T14:42:32.467936+00:00"
+      "matched": 2,
+      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-07T14:42:32.467936+00:00"
+      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-10-07T14:42:32.467936+00:00"
+      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
     }
   ],
   "items": [
+    {
+      "id": "fbb1e012c43d81af4b32ee98",
+      "title": "NASA Sets Coverage for SpaceX 35th Station Resupply Launch, Arrival",
+      "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-spacex-35th-station-resupply-launch-arrival/",
+      "source": "NASA",
+      "published": "2026-10-07T21:16:42+00:00",
+      "capturedAt": "2026-10-08T14:52:03.629633+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
+    {
+      "id": "1992c310d7b6f26d2e563f8b",
+      "title": "NASA’s SpaceX 35th Commercial Resupply Mission Overview",
+      "url": "https://www.nasa.gov/general/nasas-spacex-35th-commercial-resupply-mission-overview/",
+      "source": "NASA",
+      "published": "2026-10-07T20:17:16+00:00",
+      "capturedAt": "2026-10-08T14:52:03.629633+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
     {
       "id": "76236321861c084633d9f878",
       "title": "NASA to Cover Northrop Grumman CRS-24 Spacecraft Departure",
