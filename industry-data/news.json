@@ -1,29 +1,53 @@
 {
-  "checkedAt": "2026-10-08T14:52:03.629633+00:00",
+  "checkedAt": "2026-10-09T14:35:11.781028+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 2,
-      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
+      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
+      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-10-08T14:52:03.629633+00:00"
+      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
     }
   ],
   "items": [
+    {
+      "id": "9f4d01aca69009eaee8e2ad8",
+      "title": "Crew-12 Returns to Earth",
+      "url": "https://www.nasa.gov/image-article/crew-12-returns-to-earth/",
+      "source": "NASA",
+      "published": "2026-10-08T18:52:27+00:00",
+      "capturedAt": "2026-10-09T14:35:11.781028+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
+    {
+      "id": "508dbedb31c35a4cfe4c1134",
+      "title": "NASA’s SpaceX Crew‑12 Splashes Down, Sets Briefing to Discuss Mission",
+      "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-12-splashes-down-sets-briefing-to-discuss-mission/",
+      "source": "NASA",
+      "published": "2026-10-08T17:02:28+00:00",
+      "capturedAt": "2026-10-09T14:35:11.781028+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
     {
       "id": "fbb1e012c43d81af4b32ee98",
       "title": "NASA Sets Coverage for SpaceX 35th Station Resupply Launch, Arrival",
