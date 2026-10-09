@@ -52,9 +52,9 @@
   }
  }
  function presentation(){const host=$('#presentationStudio');if(!host)return;
-  const tools=$('.deck-tools',host);if(tools&&!tools.closest('details'))fold([tools],'Choose or import a presentation');
-  const actions=$('.deck-actions',host);if(actions&&!actions.dataset.tidy){actions.dataset.tidy='true';fold([$('#htmlExport',host),$('#jsonExport',host),$('#deleteDeck',host)].filter(Boolean),'Export & manage');}
-  const work=$('.slide-work',host);if(work&&!$('#slide-work-views',work))tabs(work,'slide-work-views',[{label:'Preview',nodes:[$('#slidePreview',work)]},{label:'Edit slide',nodes:[$('#slideForm',work),$('.slide-actions',work)]}]);
+  const tools=$('.deck-tools',host);if(tools&&!tools.closest('details'))fold([tools],window.OrbitalCloud?.canEdit()?'Choose or import a presentation':'Choose a presentation');
+  const actions=$('.deck-actions',host);if(actions&&!actions.dataset.tidy){actions.dataset.tidy='true';fold([$('#htmlExport',host),$('#jsonExport',host),$('#deleteDeck',host)].filter(Boolean),window.OrbitalCloud?.canEdit()?'Export & manage':'Export presentation');}
+  const work=$('.slide-work',host);if(work&&!$('#slide-work-views',work))tabs(work,'slide-work-views',[{label:'Preview',nodes:[$('#slidePreview',work)]},{label:window.OrbitalCloud?.canEdit()?'Edit slide':'Slide details',nodes:[$('#slideForm',work),$('.slide-actions',work)]}]);
  }
  function industry(){if(!$('#industryCharts')||$('#industry-views'))return;
   const views=tabs($('main'),'industry-views',[{label:'Sectors',nodes:[$('#industryCharts')]},{label:'Companies',nodes:[$('#industryFilters'),$('.company-list-heading'),$('#companyCards')]},{label:'Updates to review',nodes:[$('.industry-updates')]}]);
