@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-10-09T14:35:11.781028+00:00",
+  "checkedAt": "2026-10-10T13:56:32.092125+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 2,
-      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
+      "checkedAt": "2026-10-10T13:56:32.092125+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
+      "checkedAt": "2026-10-10T13:56:32.092125+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-10-09T14:35:11.781028+00:00"
+      "checkedAt": "2026-10-10T13:56:32.092125+00:00"
     }
   ],
   "items": [
+    {
+      "id": "b85427f614ddb37d467c541d",
+      "title": "NASA Demonstrates Next-Generation Heat Shield Technologies",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
+      "source": "NASA",
+      "published": "2026-10-09T16:59:24+00:00",
+      "capturedAt": "2026-10-10T13:56:32.092125+00:00",
+      "companyIds": [
+        "industry-company-b588f6801a03f4"
+      ],
+      "matchReason": "Matched Northrop Grumman — relevance requires review"
+    },
     {
       "id": "9f4d01aca69009eaee8e2ad8",
       "title": "Crew-12 Returns to Earth",
