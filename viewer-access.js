@@ -6,13 +6,13 @@
     '#mainAction','#editSubsystem','#removeSubsystem','#undoSubsystem','#outlineUndo',
     '[data-command="add"]','[data-command="layout"]','[data-command="undo"]','[data-port]','[data-rewire]',
     '#newDeck','#starterDeck','#deckSave','#deleteDeck','#addSlide','#duplicateSlide','#removeSlide','#slideUp','#slideDown',
-    '#editPaper','#noteForm button','#paperStatus button','[data-view="import"]',
+    '#editPaper','#linkPaperSubsystem','[data-unlink-paper]','#noteForm button','#paperStatus button','[data-view="import"]',
     '#addCompany','#editCompany','#removeCompany','[data-review]','[data-dismiss]','[data-decision]',
     '#add-meeting-task','[data-complete-task]','#task-remove',
     'label:has(#file)','label:has(#importDesign)','label:has(#deckImport)'
   ].join(',');
   const forms = '#importForm,#noteForm,#paperStatus,#slideForm,.project-form,.subsystem-form,.node-form,.edge-form,.connect-form,#companyForm,#reviewForm,#meeting-task-form';
-  const fields = '#file,#importDesign,#deckImport,#deckTitle,' + forms.split(',').flatMap(s=>[s+' input',s+' textarea',s+' select',s+' button']).join(',');
+  const fields = '#paperLinkPicker input,#file,#importDesign,#deckImport,#deckTitle,' + forms.split(',').flatMap(s=>[s+' input',s+' textarea',s+' select',s+' button']).join(',');
   const blocked = actions+','+fields;
   let observer;
   function protect() {
