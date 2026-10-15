@@ -1,29 +1,51 @@
 {
-  "checkedAt": "2026-10-14T13:01:47.160862+00:00",
+  "checkedAt": "2026-10-15T12:48:55.315124+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
-      "matched": 2,
-      "checkedAt": "2026-10-14T13:01:47.160862+00:00"
+      "matched": 1,
+      "checkedAt": "2026-10-15T12:48:55.315124+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-14T13:01:47.160862+00:00"
+      "checkedAt": "2026-10-15T12:48:55.315124+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
-      "matched": 1,
-      "checkedAt": "2026-10-14T13:01:47.160862+00:00"
+      "matched": 2,
+      "checkedAt": "2026-10-15T12:48:55.315124+00:00"
     }
   ],
   "items": [
+    {
+      "id": "07e53cea639f25f304557811",
+      "title": "NASA’s Space X CRS-35 Launch Jellyfish",
+      "url": "https://www.nasa.gov/image-article/nasas-space-x-crs-35-launch-jellyfish/",
+      "source": "NASA",
+      "published": "2026-10-14T15:18:38+00:00",
+      "capturedAt": "2026-10-15T12:48:55.315124+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
+    {
+      "id": "8305a742d31be4211c98431f",
+      "title": "Swarming robots to tackle space debris",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Swarming_robots_to_tackle_space_debris",
+      "source": "ESA engineering",
+      "published": "2026-10-15T09:50:00+02:00",
+      "capturedAt": "2026-10-15T12:48:55.315124+00:00",
+      "companyIds": [],
+      "matchReason": "Matched space debris — relevance requires review"
+    },
     {
       "id": "df1c1b3cdf8fc6f2e3c959af",
       "title": "Transporter-18 SmallSats Encapsulation",
