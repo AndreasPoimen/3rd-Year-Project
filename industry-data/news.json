@@ -1,29 +1,42 @@
 {
-  "checkedAt": "2026-10-23T12:49:06.419494+00:00",
+  "checkedAt": "2026-10-24T12:11:06.574810+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
-      "matched": 0,
-      "checkedAt": "2026-10-23T12:49:06.419494+00:00"
+      "matched": 1,
+      "checkedAt": "2026-10-24T12:11:06.574810+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-10-23T12:49:06.419494+00:00"
+      "checkedAt": "2026-10-24T12:11:06.574810+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": true,
       "matched": 2,
-      "checkedAt": "2026-10-23T12:49:06.419494+00:00"
+      "checkedAt": "2026-10-24T12:11:06.574810+00:00"
     }
   ],
   "items": [
+    {
+      "id": "57c0a5f2d9657bbd32fd2ee5",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+      "source": "NASA",
+      "published": "2026-10-23T22:39:39+00:00",
+      "capturedAt": "2026-10-24T12:11:06.574810+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109",
+        "industry-company-0af1be88c0ee21"
+      ],
+      "matchReason": "Matched SpaceX, Blue Origin — relevance requires review"
+    },
     {
       "id": "07e53cea639f25f304557811",
       "title": "NASA’s Space X CRS-35 Launch Jellyfish",
