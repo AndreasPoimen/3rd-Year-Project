@@ -1,26 +1,26 @@
 {
-  "checkedAt": "2026-11-04T15:42:29.391034+00:00",
+  "checkedAt": "2026-11-05T15:44:56.056459+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 0,
-      "checkedAt": "2026-11-04T15:42:29.391034+00:00"
+      "checkedAt": "2026-11-05T15:44:56.056459+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
-      "ok": true,
-      "matched": 0,
-      "checkedAt": "2026-11-04T15:42:29.391034+00:00"
+      "ok": false,
+      "error": "HTTP Error 404: Not Found",
+      "checkedAt": "2026-11-05T15:44:56.056459+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
-      "ok": true,
-      "matched": 2,
-      "checkedAt": "2026-11-04T15:42:29.391034+00:00"
+      "ok": false,
+      "error": "HTTP Error 404: Not Found",
+      "checkedAt": "2026-11-05T15:44:56.056459+00:00"
     }
   ],
   "items": [
