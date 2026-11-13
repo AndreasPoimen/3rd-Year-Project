@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-11-12T16:09:43.447282+00:00",
+  "checkedAt": "2026-11-13T15:38:24.681857+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
-      "matched": 0,
-      "checkedAt": "2026-11-12T16:09:43.447282+00:00"
+      "matched": 1,
+      "checkedAt": "2026-11-13T15:38:24.681857+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-12T16:09:43.447282+00:00"
+      "checkedAt": "2026-11-13T15:38:24.681857+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-12T16:09:43.447282+00:00"
+      "checkedAt": "2026-11-13T15:38:24.681857+00:00"
     }
   ],
   "items": [
+    {
+      "id": "2b062e211d835d104e73a59c",
+      "title": "I Am Artemis Katie Spicer",
+      "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/",
+      "source": "NASA",
+      "published": "2026-11-12T20:10:02+00:00",
+      "capturedAt": "2026-11-13T15:38:24.681857+00:00",
+      "companyIds": [
+        "industry-company-0af1be88c0ee21"
+      ],
+      "matchReason": "Matched Blue Origin — relevance requires review"
+    },
     {
       "id": "9afd0129ac20e2508e44571f",
       "title": "NASA Invites Media to Northrop Grumman CRS-25 Station Resupply Launch",
