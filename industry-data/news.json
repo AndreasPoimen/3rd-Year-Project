@@ -1,29 +1,39 @@
 {
-  "checkedAt": "2026-11-16T17:21:02.562859+00:00",
+  "checkedAt": "2026-11-17T17:01:24.130038+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-11-16T17:21:02.562859+00:00"
+      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
-      "error": "HTTP Error 503: first byte timeout",
-      "checkedAt": "2026-11-16T17:21:02.562859+00:00"
+      "error": "HTTP Error 404: Not Found",
+      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
-      "error": "HTTP Error 503: first byte timeout",
-      "checkedAt": "2026-11-16T17:21:02.562859+00:00"
+      "error": "HTTP Error 404: Not Found",
+      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
     }
   ],
   "items": [
+    {
+      "id": "530c470764109a8f57bff7f8",
+      "title": "A Collage Showing 49 Drill Holes Made by NASA’s Curiosity Mars Rover",
+      "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+      "source": "NASA",
+      "published": "2026-11-16T22:05:23+00:00",
+      "capturedAt": "2026-11-17T17:01:24.130038+00:00",
+      "companyIds": [],
+      "matchReason": "Matched robotic arm — relevance requires review"
+    },
     {
       "id": "2b062e211d835d104e73a59c",
       "title": "I Am Artemis Katie Spicer",
