@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-11-17T17:01:24.130038+00:00",
+  "checkedAt": "2026-11-18T16:41:26.714111+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
+      "checkedAt": "2026-11-18T16:41:26.714111+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
+      "checkedAt": "2026-11-18T16:41:26.714111+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-17T17:01:24.130038+00:00"
+      "checkedAt": "2026-11-18T16:41:26.714111+00:00"
     }
   ],
   "items": [
+    {
+      "id": "f7f34b27e3ae136b6d152bb9",
+      "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
+      "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/",
+      "source": "NASA",
+      "published": "2026-11-17T19:16:22+00:00",
+      "capturedAt": "2026-11-18T16:41:26.714111+00:00",
+      "companyIds": [
+        "industry-company-e78bdebae03109"
+      ],
+      "matchReason": "Matched SpaceX — relevance requires review"
+    },
     {
       "id": "530c470764109a8f57bff7f8",
       "title": "A Collage Showing 49 Drill Holes Made by NASA’s Curiosity Mars Rover",
