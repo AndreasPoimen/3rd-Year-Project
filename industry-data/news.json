@@ -1,29 +1,39 @@
 {
-  "checkedAt": "2026-11-19T16:44:30.798320+00:00",
+  "checkedAt": "2026-11-20T16:19:07.257222+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-11-19T16:44:30.798320+00:00"
+      "checkedAt": "2026-11-20T16:19:07.257222+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-19T16:44:30.798320+00:00"
+      "checkedAt": "2026-11-20T16:19:07.257222+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-19T16:44:30.798320+00:00"
+      "checkedAt": "2026-11-20T16:19:07.257222+00:00"
     }
   ],
   "items": [
+    {
+      "id": "90af90b972375528e60441c6",
+      "title": "NASA’s Curiosity Mars Rover Collects Samples",
+      "url": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
+      "source": "NASA",
+      "published": "2026-11-20T15:53:24+00:00",
+      "capturedAt": "2026-11-20T16:19:07.257222+00:00",
+      "companyIds": [],
+      "matchReason": "Matched robotic arm — relevance requires review"
+    },
     {
       "id": "162c5c6a72fe29aa979360a9",
       "title": "NASA Sets Coverage for Northrop Grumman CRS-25 Launch, Prelaunch",
