@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-20T17:03:12.553Z",
-  "ok": false,
-  "blocked": false,
-  "error": "The operation was aborted due to timeout"
+  "checkedAt": "2026-11-21T01:36:13.444Z",
+  "ok": true,
+  "records": 1768,
+  "blocked": false
 }
