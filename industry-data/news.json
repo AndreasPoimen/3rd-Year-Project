@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-11-23T19:26:31.576854+00:00",
+  "checkedAt": "2026-11-24T19:02:14.601590+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
-      "matched": 0,
-      "checkedAt": "2026-11-23T19:26:31.576854+00:00"
+      "matched": 1,
+      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-23T19:26:31.576854+00:00"
+      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-23T19:26:31.576854+00:00"
+      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
     }
   ],
   "items": [
+    {
+      "id": "375278fb60b058521bb5c223",
+      "title": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-noaas-near-earth-orbit-network-program/",
+      "source": "NASA",
+      "published": "2026-11-23T21:10:03+00:00",
+      "capturedAt": "2026-11-24T19:02:14.601590+00:00",
+      "companyIds": [
+        "industry-company-b588f6801a03f4"
+      ],
+      "matchReason": "Matched Northrop Grumman — relevance requires review"
+    },
     {
       "id": "90af90b972375528e60441c6",
       "title": "NASA’s Curiosity Mars Rover Collects Samples",
