@@ -1,29 +1,41 @@
 {
-  "checkedAt": "2026-11-24T19:02:14.601590+00:00",
+  "checkedAt": "2026-11-25T18:08:28.812695+00:00",
   "sources": [
     {
       "name": "NASA",
       "url": "https://www.nasa.gov/feed/",
       "ok": true,
       "matched": 1,
-      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
+      "checkedAt": "2026-11-25T18:08:28.812695+00:00"
     },
     {
       "name": "ESA space news",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
+      "checkedAt": "2026-11-25T18:08:28.812695+00:00"
     },
     {
       "name": "ESA engineering",
       "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Engineering_Technology",
       "ok": false,
       "error": "HTTP Error 404: Not Found",
-      "checkedAt": "2026-11-24T19:02:14.601590+00:00"
+      "checkedAt": "2026-11-25T18:08:28.812695+00:00"
     }
   ],
   "items": [
+    {
+      "id": "5257e4b96b7100c003d21108",
+      "title": "NASA’s Northrop Grumman CRS-25 Mission Overview",
+      "url": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+      "source": "NASA",
+      "published": "2026-11-24T19:09:16+00:00",
+      "capturedAt": "2026-11-25T18:08:28.812695+00:00",
+      "companyIds": [
+        "industry-company-b588f6801a03f4"
+      ],
+      "matchReason": "Matched Northrop Grumman — relevance requires review"
+    },
     {
       "id": "375278fb60b058521bb5c223",
       "title": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program",
